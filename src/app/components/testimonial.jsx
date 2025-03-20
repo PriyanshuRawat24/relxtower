@@ -94,11 +94,6 @@ const Testimonial = () => {
         </CarouselContent>
       </Carousel>
     </div>
-
-    {/* Scroll to top button */}
-    <div className="absolute bottom-6 right-6 bg-orange-500 w-10 h-10 flex items-center justify-center rounded-full shadow-lg cursor-pointer">
-      <span className="text-white text-xl">↑</span>
-    </div>
   </div>
   );
 };
