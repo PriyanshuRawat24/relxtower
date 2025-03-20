@@ -6,12 +6,9 @@ import React from "react";
 const Appointment = () => {
     return (
         <div className="relative w-full h-[400px] lg:h-[500px] flex items-center justify-center">
-            {/* Background Image with Overlay */}
             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/cta-bg1.jpg')" }}>
                 <div className="absolute inset-0 bg-[#c28b48] opacity-30"></div>
             </div>
-
-            {/* Content */}
             <div className="relative text-center text-white px-6">
                 <p className="text-lg">Don{"'t"} hesitate to contact us</p>
                 <h3 className="text-3xl md:text-5xl font-bold mt-2">

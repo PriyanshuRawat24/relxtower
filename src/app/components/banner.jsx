@@ -27,9 +27,7 @@ const Banner = (
                     backgroundPosition: "center",
                 }}
             >
-                {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-black opacity-10"></div>
-                {/* Content */}
                 <div className="relative z-10 flex flex-col items-center">
                     <h1 className="text-7xl font-bold mb-6">{heading}</h1>
                     <Breadcrumb className="text-white">

@@ -60,9 +60,6 @@ const Footer = () => {
                 <div className="mt-32 border-t border-gray-700 py-16 text-center items-center flex justify-center text-gray-500">
                     &copy; 2020 @ Relxtower All design Zcube.
                 </div>
-                {/* <button className="fixed bottom-5 right-5 bg-orange-500 text-white p-3 rounded-full shadow-lg">
-                    
-                </button> */}
             </footer>
 
 

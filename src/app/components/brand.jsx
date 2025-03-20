@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-// Dummy brand logos, replace with your own
 const brands = [
   { name: "goldline", src: "/brand1.png" },
   { name: "UTOSIA", src: "/brand2.png" },

@@ -28,7 +28,7 @@ export default function Contact() {
 
 
             <div className="flex flex-col lg:flex-row max-w-5xl mx-auto my-10 gap-6">
-                {/* Left Section */}
+                {/* Left */}
                 <div className="bg-gray-900 text-white p-6 w-full h-[85vh] lg:w-1/3">
                     <div className="mb-10">
                         <h2 className="text-lg font-bold uppercase">Office Address</h2>
@@ -50,7 +50,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                {/* Right Section - Form */}
+                {/* Right - Form */}
                 <div className="w-full lg:w-2/3 bg-white mt-14">
                     <form onSubmit={handleSubmit}>
                         <div className="mb-12">

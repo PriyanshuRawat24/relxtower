@@ -58,14 +58,12 @@ const Plan = () => {
     <>
 
 <div className="grid grid-cols-1 sm:grid-cols-2 py-12 sm:py-20 lg:mt-10 w-full px-4 sm:px-12 lg:px-12">
-        {/* Left Side - Plan Info */}
+        {/* Left Side */}
         <div className="px-4 sm:px-10 w-full">
           <p className="font-bold text-[#C88964] pb-2">CHECKOUT THE PLAN</p>
           <h1 className="text-2xl sm:text-4xl font-bold text-black">
             APARTMENT PLANS
           </h1>
-
-          {/* Plan Selection Buttons */}
           <div className="flex flex-wrap gap-4 py-10">
             {Object.keys(plans).map((plan) => (
               <button
@@ -80,8 +78,6 @@ const Plan = () => {
               </button>
             ))}
           </div>
-
-          {/* Plan Details List */}
           <div className="flex flex-col sm:flex-row sm:space-x-6 py-10">
             <div className="w-full sm:w-[440px]">
               {newdata.map((data, idx) => (
@@ -98,7 +94,7 @@ const Plan = () => {
           </div>
         </div>
 
-        {/* Right Side - Image & Description */}
+        {/* Right Side */}
         <div className="w-full mt-10 sm:mt-0">
           <p className="text-start text-gray-600 pl-0 sm:pl-8">
             {plans[activePlan].description}

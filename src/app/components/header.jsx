@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full">
-        {/* Top info bar */}
+        {/* Top */}
         <div className="max-w-7xl hidden sm:block mx-auto py-2  px-4 text-sm">
           <div className="flex flex-wrap justify-between items-center">
             <p className="text-sm md:text-base">Welcome to our Relxtower.</p>
@@ -39,7 +39,6 @@ const Header = () => {
 
         {/* Main Navbar */}
         <div className="flex flex-col md:flex-row">
-          {/* Logo Section */}
           <div className="w-full md:w-[300px] lg:w-[400px] h-20  md:h-auto bg-gray-900 py-4 px-4 flex items-center justify-between">
             <Link href="/" className="flex items-center">
               <Image
@@ -50,7 +49,6 @@ const Header = () => {
                 className="ml-2 md:ml-[40px] lg:ml-[50px]"
               />
             </Link>
-            {/* Mobile Menu Button - Moved here */}
             <button
               className="md:hidden text-white mr-4"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -58,12 +56,9 @@ const Header = () => {
               {!isMenuOpen ? <FaBars size={24} /> : <IoMdClose size={24} />}
             </button>
           </div>
-
-          {/* Navigation Menu */}
           <div className="bg-[#c28b48] flex-1">
             <div className="container mx-auto px-4">
               <div className="hidden md:flex justify-between items-center h-full lg:pl-32">
-                {/* Desktop Navigation */}
                 <nav className="flex gap-6 ">
                   {navigation.map((item, i) => (
                     <Link
@@ -75,8 +70,6 @@ const Header = () => {
                     </Link>
                   ))}
                 </nav>
-
-                {/* Signup Button */}
                 <Link
                   href="/signup"
                   className="items-center bg-gray-900 text-white px-6 lg:px-10 py-[35px] flex hover:bg-gray-800 transition duration-300"
@@ -86,7 +79,7 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Mobile Navigation */}
+            {/* Mobile */}
             {isMenuOpen && (
               <div className="absolute top-[55px] left-0 w-full bg-[#c28b48] z-50 md:hidden shadow-lg">
                 <ul className="flex flex-col py-4">

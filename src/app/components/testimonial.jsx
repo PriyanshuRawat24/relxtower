@@ -13,10 +13,7 @@ const Testimonial = () => {
       backgroundImage: "url('/test-bg.jpg')",
     }}
   >
-    {/* Overlay */}
     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-    {/* Content */}
     <div className="relative z-10 text-center text-white max-w-3xl px-4">
       <p className="text-[#c28b48] uppercase tracking-wide font-medium">
         Experience with me

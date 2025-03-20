@@ -5,8 +5,6 @@ import Banner from '../components/banner'
 import Image from 'next/image'
 import { fetchProperties } from '@/utils/Api';
 import { useEffect, useState } from 'react'
-import Property from '../components/property';
-import Brand from '../components/brand';
 import Link from 'next/link';
 
 const Page = () => {
