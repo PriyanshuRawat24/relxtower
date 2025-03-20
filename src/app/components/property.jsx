@@ -1,45 +1,28 @@
-"use clients"
+"use client"
 
 import Image from "next/image";
-import React from "react";
-import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
+import { fetchProperties } from "@/utils/Api";
 
-const properties = [
-    {
-        title: "One Room Apartment",
-        image: "/property1.jpg",
-        link: "/one-room",
-    },
-    {
-        title: "Luxury Apartment",
-        image: "/property2.jpg",
-        link: "/luxury",
-    },
-    {
-        title: "Deluxe Apartment",
-        image: "/property3.jpg",
-        link: "/deluxe",
-    },
-    {
-        title: "Deluxe Apartment",
-        image: "/property3.jpg",
-        link: "/deluxe",
-    },
-    {
-        title: "Luxury Apartment",
-        image: "/property2.jpg",
-        link: "/luxury",
-    },
-];
+
 
 export default function Property() {
+    const [properties, setProperties] = useState([]);
+
+    useEffect(()=>{
+        const fetchData = async ()=> {
+            const data = await fetchProperties()
+            setProperties(data)
+        }
+
+        fetchData()
+    },[])
+
     return (
         <div className="container mx-auto px-4 py-16 mt-16">
             {/* Heading Section */}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FaBed, FaCar, FaRulerCombined, FaShower } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaBed, FaCar, FaRulerCombined, FaShower } from 'react-icons/fa';
 import Image from 'next/image';
 import { SiGoogledisplayandvideo360 } from "react-icons/si";
 import Link from 'next/link';
@@ -64,7 +64,7 @@ export default function HeroSection() {
                             </button>
                         </Link>
                         <Link href="/">
-                            <button className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 bg-[#c28b48] text-white rounded shadow-md">
+                            <button className="mt-4 sm:mt-6 md:px-6 sm:px-3 md:py-4 sm:py-3 bg-[#c28b48] text-white rounded shadow-md">
                                 <SiGoogledisplayandvideo360 />
                             </button>
                         </Link>
@@ -73,7 +73,7 @@ export default function HeroSection() {
             </div>
 
             {/* Price Section */}
-            <div className="absolute bottom-32 md:bottom-40 right-4 sm:right-[200px] md:right-[300px] text-center">
+            <div className="absolute bottom-32 md:bottom-40 right-1/2 sm:right-[200px] md:right-[300px] text-center">
                 <div>
                     <p className="text-white text-2xl sm:text-3xl md:text-5xl font-semibold flex items-start">
                         Price:
@@ -90,15 +90,15 @@ export default function HeroSection() {
             {/* Navigation Buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-md hidden sm:block"
+                className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 z-10 rounded-full shadow-md hidden sm:block"
             >
-                ⬅
+                <FaArrowLeft />
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-md"
+                className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 z-10 rounded-full shadow-md  hidden sm:block"
             >
-                ➡
+                <FaArrowRight />
             </button>
         </div>
     );

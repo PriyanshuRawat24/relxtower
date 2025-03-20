@@ -1,0 +1,32 @@
+[
+    {
+        "title": "One Room Apartment",
+        "image": "/property1.jpg",
+        "link": "/one-room"
+    },
+    {
+        "title": "Luxury Apartment",
+        "image": "/property2.jpg",
+        "link": "/luxury"
+    },
+    {
+        "title": "Deluxe Apartment",
+        "image": "/property3.jpg",
+        "link": "/deluxe"
+    },
+    {
+        "title": "Deluxe Apartment",
+        "image": "/property3.jpg",
+        "link": "/deluxe"
+    },
+    {
+        "title": "Luxury Apartment",
+        "image": "/property2.jpg",
+        "link": "/luxury"
+    },
+    {
+        "title": "One Room Apartment",
+        "image": "/property1.jpg",
+        "link": "/one-room"
+    }
+]

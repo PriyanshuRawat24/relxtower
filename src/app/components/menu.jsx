@@ -3,7 +3,7 @@
 import { Wrench, Bath, Bed, Car } from 'lucide-react';
 import Image from 'next/image';
 
-export default function Menu() {
+export default function Menu({ className }) {
     const details = [
         { icon: <Wrench size={40} />, value: '2543', label: 'Square Feet' },
         { icon: <Bath size={40} />, value: '4', label: 'Bathrooms' },
@@ -19,7 +19,7 @@ export default function Menu() {
                     alt="Building"
                     width={900}
                     height={600}
-                    className="w-full h-full bg-cover bg-center "
+                    className={`w-full h-full bg-cover bg-center ${className} `}
                 />
             </div>
             <div className="relative z-10 container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
