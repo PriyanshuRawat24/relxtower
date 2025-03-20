@@ -81,7 +81,7 @@ const Header = () => {
 
             {/* Mobile */}
             {isMenuOpen && (
-              <div className="absolute top-[55px] left-0 w-full bg-[#c28b48] z-50 md:hidden shadow-lg">
+              <div className="absolute top-[80px] left-0 w-full bg-[#c28b48] z-50 md:hidden shadow-lg">
                 <ul className="flex flex-col py-4">
                   {navigation.map((item, i) => (
                     <li key={`mobile-nav-${i}`} className="border-b border-[#c28b48] last:border-none">

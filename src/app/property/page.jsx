@@ -26,7 +26,7 @@ const Page = () => {
       <Banner heading={"Property"} breadcrumbs={"Property"} />
 
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 mb-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 mb-20 p-5">
         {properties.map((Property, index) => (
           <Link href={`/property/${index}`} key={index} className="basis-full sm:basis-1/2 lg:basis-1/3">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105">

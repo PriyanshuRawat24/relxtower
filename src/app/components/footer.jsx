@@ -57,8 +57,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="mt-32 border-t border-gray-700 py-16 text-center items-center flex justify-center text-gray-500">
-                    &copy; 2020 @ Relxtower All design Zcube.
+                <div className="mt-20 border-t border-gray-700 pt-10 text-center items-center flex justify-center text-gray-500">
+                    <span>&copy; 2020 @ Relxtower All design <Link href={"https://xcelb2b.com/"} target='_blank' className='text-[#c28b48]'>xcelb2b.
+                    </Link></span>
                 </div>
             </footer>
 

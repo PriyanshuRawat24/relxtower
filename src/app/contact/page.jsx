@@ -27,7 +27,7 @@ export default function Contact() {
             <Banner heading={"Contact Us"} breadcrumbs={"Contact"}/>
 
 
-            <div className="flex flex-col lg:flex-row max-w-5xl mx-auto my-10 gap-6">
+            <div className="flex flex-col lg:flex-row max-w-5xl mx-auto md:my-10 gap-6 p-5">
                 {/* Left */}
                 <div className="bg-gray-900 text-white p-6 w-full h-[85vh] lg:w-1/3">
                     <div className="mb-10">
