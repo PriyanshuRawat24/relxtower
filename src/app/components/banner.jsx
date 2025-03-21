@@ -9,6 +9,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import Link from "next/link";
 
 const Banner = (
     {
@@ -33,9 +34,9 @@ const Banner = (
                     <Breadcrumb className="text-white">
                         <BreadcrumbList className="flex justify-center items-center space-x-2">
                             <BreadcrumbItem>
-                                <BreadcrumbLink href="/" className="text-white hover:text-white">
+                                <Link href="/" className="text-white hover:text-white">
                                     Home
-                                </BreadcrumbLink>
+                                </Link>
                             </BreadcrumbItem>
                             <BreadcrumbSeparator className="text-white" />
                             <BreadcrumbItem>
