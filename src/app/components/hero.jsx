@@ -31,8 +31,8 @@ export default function HeroSection() {
             />
             <div className="absolute inset-0 bg-black/50"></div>
 
-            <div className="relative z-10 text-white px-4 sm:px-6 md:px-12">
-                <div className="border-4 border-[#c28b48] p-4 sm:p-6 md:p-12 lg:p-20 max-w-3xl mx-[10%] top-10 relative">
+            <div className="relative z-10 text-white px-6 sm:px-6 md:px-12">
+                <div className="border-4 border-[#c28b48] p-4 sm:p-6 md:p-12 lg:p-20 max-w-3xl mx-[10%] top-32 relative">
                     <div className="absolute top-0 left-0 w-8 h-8 sm:w-12 sm:h-12 border-t-4 border-l-4 border-[#c28b48]"></div>
                     <div className="absolute top-0 right-0 w-8 h-8 sm:w-12 sm:h-12 border-t-4 border-r-4 border-[#c28b48]"></div>
                     <div className="absolute bottom-0 left-0 w-8 h-8 sm:w-12 sm:h-12 border-b-4 border-l-4 border-[#c28b48]"></div>
@@ -54,25 +54,12 @@ export default function HeroSection() {
                                 Get a Quote
                             </button>
                         </Link>
-                        <Link href="/">
-                            <button className="mt-4 sm:mt-6 md:px-6 sm:px-3 md:py-4 sm:py-3 bg-[#c28b48] text-white rounded shadow-md">
+                        <Link href="/" className='hidden sm:block '>
+                            <button className="mt-4 sm:mt-6 md:px-6 sm:px-3 md:py-4 p-4 px-10 bg-[#c28b48] text-white rounded shadow-md ">
                                 <SiGoogledisplayandvideo360 />
                             </button>
                         </Link>
                     </div>
-                </div>
-            </div>
-            <div className="absolute bottom-32 md:bottom-40 right-1/2 sm:right-[200px] md:right-[300px] text-center">
-                <div>
-                    <p className="text-white text-2xl sm:text-3xl md:text-5xl font-semibold flex items-start">
-                        Price:
-                    </p>
-                    <span className="text-[#c28b48] text-3xl sm:text-4xl md:text-6xl font-bold flex items-end">
-                        $
-                        <p className="text-[#c28b48] text-2xl sm:text-3xl md:text-5xl font-bold">
-                            {slides[index].price}
-                        </p>
-                    </span>
                 </div>
             </div>
 
